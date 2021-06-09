@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             tvResult.text = ""
             for(i in 0 until data.size){
                 tvResult.append(
-                    data[i].text.toString() + " " + data[i].username.toString() + " " + data[i].password.toString()
+                    data[i].text + ": " + data[i].username + " " + data[i].password + "\n"
                 )
             }
         }

@@ -16,7 +16,7 @@ const val COL_PASSWORD = "password"
 class DataBaseHelper(var context: Context) : SQLiteOpenHelper(context, DATABASENAME, null, 1){
     override fun onCreate(db: SQLiteDatabase?) {
         val createTable =
-            "CREATE TABLE $TABLENAME ($COL_ID INTEGER PRIMARY KEY AUTOINCREMENT,$COL_TEXT VARCHAR(250),$COL_USERNAME VARCHAR(250),$COL_PASSWORD VARCHAR(250))"
+            "CREATE TABLE $TABLENAME ($COL_TEXT VARCHAR(250),$COL_USERNAME VARCHAR(250),$COL_PASSWORD VARCHAR(250))"
         db?.execSQL(createTable)
     }
 
