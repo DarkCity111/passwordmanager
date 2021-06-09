@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
                     data[i].text + ": " + data[i].username + " " + data[i].password + "\n"
                 )
             }
+            TODO("Implementieren des Fingerabdruckscanner")
+            //https://github.com/android/security-samples/tree/main/BiometricAuthentication
         }
 
     }
